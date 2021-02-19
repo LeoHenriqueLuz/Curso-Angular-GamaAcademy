@@ -1,11 +1,28 @@
 .header {
-    text-align: center;
+    text-align:0 ;
     padding: 0.8rem;
-    background-color: rgb(170, 41, 245);
+    background-color:#8706ffb0;
 
   &__title {
         color: white;
         margin: 0;
         font-size: 2rem;
  }
-}
+ .nav-bar-list {
+   background-color: #e058e0d5;
+  li{
+    display: inline;
+    font-weight: bold;
+
+    a  {
+      display: inline-block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .ative{
+      background-color: #8706ffb0;
+    }
+    }
+   }
+ }
