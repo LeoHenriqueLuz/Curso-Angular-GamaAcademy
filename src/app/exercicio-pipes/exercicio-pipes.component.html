@@ -1,0 +1,18 @@
+
+<h2>Titulo: {{serieFilme.titulo | uppercase}}</h2>
+<h2>Avaliação: {{serieFilme.avaliacao | number: '1.1-1'}}</h2>
+<h2>Data de laçamento: {{serieFilme.dataLancamento | date: 'short'}}</h2>
+<h2>Assine HBO por apenas: {{serieFilme.precoAssinaturaHBO |currency : 'BRL' }}</h2>
+<hr>
+<h1>Exercício de pipes</h1>
+
+<ul>
+    <li *ngFor="let compra of compras" >
+        <p>Produto: <b>{{compra.produto | uppercase}}</b> </p>
+        <p>Valor: {{compra.valor | currency:'BRL'}}</p>
+        <p>Quantidade: {{compra.quantidade }}</p>
+        <p>Peso:{{getPesoFormat(compra.peso )}}</p>
+        <p>Data: {{compra.data | date:'EEEE, dd \'de\' MMMM \'de\' yyyy, \'às\' HH:mm'| uppercase }}</p>
+    </li>
+</ul>
+
