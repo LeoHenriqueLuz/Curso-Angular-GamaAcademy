@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { MEMES_AGRUPADOS_POR_CATEGORIA } from './exercicio-diretivas.constants';
+
 @Component({
   selector: 'app-exercicio-diretivas',
   templateUrl: './exercicio-diretivas.component.html',
@@ -39,6 +41,11 @@ infoCarro = [{
   placa: "GHD 1075"
 
 }]
+
+MEMES_AGRUPADOS_POR_CATEGORIA = MEMES_AGRUPADOS_POR_CATEGORIA;
+
+PREFIXO_IMAGE_URL="https://raw.githubusercontent.com/vitorfgsantos/angular-memes-diretivas/master/images";
+
 condicao= false;
 
 

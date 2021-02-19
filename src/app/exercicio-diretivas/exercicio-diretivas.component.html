@@ -27,3 +27,22 @@
       {{first}} - {{index + 1}} - {{carro.marca}} - {{carro.modelo}} - {{carro.anoFab }} - {{carro.placa}}
     </li>
 </ul>
+<br>
+<hr>
+<h1> Exercício diretivas</h1>
+
+
+<ul>
+    <li *ngFor= "let memesAgrupados of MEMES_AGRUPADOS_POR_CATEGORIA ">
+      <H2> {{memesAgrupados.categoria}} </H2>
+      
+       <div  *ngFor = "let memes of memesAgrupados.memes; let par =  even" >
+           
+           <img [src]="PREFIXO_IMAGE_URL + memes.imagemURL " *ngIf= "par; else blocoPar" >
+         <ng-template #blocoPar>
+            <h2 >Par</h2>
+         </ng-template>
+           
+       </div>
+    </li>
+</ul>
