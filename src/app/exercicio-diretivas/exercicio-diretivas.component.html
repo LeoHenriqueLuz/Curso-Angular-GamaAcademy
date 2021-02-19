@@ -1,0 +1,29 @@
+<p>valor atual dentro de condição: {{condicao}}</p>
+<hr>
+<button (click)="trocarValor()">Trocar valor</button>
+
+
+
+<div *ngIf = "condicao; else elseBlock" >
+   Entrei na condição ngIf 
+</div>
+
+<ng-template #elseBlock>Sou exibido quando condição for false!</ng-template>
+
+<div  *ngIf="soma(5, 6) > 10">
+    Entrei na condição ngIf pelo retorno da função somar
+</div> 
+
+<hr>
+
+<!-- Exemplos de ngFor-->
+
+<ul>
+    <li *ngFor="let fruta of listaFrutas">{{fruta}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let carro of infoCarro; let index = index; first as first" >
+      {{first}} - {{index + 1}} - {{carro.marca}} - {{carro.modelo}} - {{carro.anoFab }} - {{carro.placa}}
+    </li>
+</ul>

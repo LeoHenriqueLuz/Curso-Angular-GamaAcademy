@@ -1,0 +1,27 @@
+ <!-- Exercício Contador-->
+  <h2>valor atual de valorContador: {{valorContador}}</h2>
+ <app-contador
+
+[(valor)]= "valorContador"
+></app-contador>
+
+
+<br>
+<hr>
+<!-- Exemplo de property binding-->
+valorInput: {{valorInput}}
+<input type="text" [value]="valorInput" (keyup)="digitouAlgumaCoisa($event)">
+
+<hr>
+<br>
+
+<!-- Exemplo de event binding -->
+<button (click)= "onClick($event)" (mouseenter)="moveuMouse()" >Clique aqui</button>
+
+ <br>
+ <hr>
+ 
+<button (click)=" onClickBotaoEmissor($event)"> 
+    Emitir informação de clique
+</button>
+
