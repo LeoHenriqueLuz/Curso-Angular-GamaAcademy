@@ -1,0 +1,16 @@
+<p>exercicio-ngclass works!</p>
+
+<h1 [ngClass] ="deveSerCorRoxa ? 'roxo' : 'cinza' " >testando cores</h1>
+
+<h1 [ngClass] = "{'roxo': deveSerCorRoxa,
+'cinza': !deveSerCorRoxa }" >testando cores2</h1>
+
+<button (click)= "tornarRoxo()">tornar texto roxo</button>
+
+<p [class]="deveSerCorRoxa ? 'roxo' : 'cinza'">
+    Testando  Property Binding Class
+</p>
+
+<p [class.roxo]="deveSerCorRoxa">
+    Testando  Property Binding Class2
+</p>

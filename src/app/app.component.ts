@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = "Exemplos de Property e Event Binding";
-  palavra = "msg enviado de component pai p/ component filho!";
+  title = "Aprendendo Angular!";
+  palavra = "Aulas da Gama Academy é top!!!";
 
   constructor(){}
 
